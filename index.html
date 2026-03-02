@@ -21,7 +21,10 @@
                 .hover\:bg-primary-hover:hover { background-color: var(--primary-hover); }
                 .text-primary { color: var(--primary); }
                 .border-primary { border-color: var(--primary); }
-                body { color: var(--text-main); }
+                html, body {
+                    color: var(--text-main);
+                    overflow-x: hidden;
+                }
             }
         </style>
     <style>
@@ -85,7 +88,7 @@
             };
         </script>
     </head>
-    <body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased transition-colors duration-200 overflow-x-hidden">
+    <body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased transition-colors duration-200">
     <nav class="w-full border-b border-gray-200 dark:border-gray-800 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-md sticky top-0 z-50" data-nav>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16 items-center">
