@@ -1,0 +1,118 @@
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rule24 - Спасибо за регистрацию</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #5A7F67;
+            --primary-hover: #4A6955;
+            --background-light: #F9FAFB;
+            --surface-light: #FFFFFF;
+            --text-main: #111827;
+            --text-muted: #4B5563;
+            --text-slate-trust: #334155;
+        }
+        @layer base {
+            .bg-primary { background-color: var(--primary); }
+            .hover\:bg-primary-hover:hover { background-color: var(--primary-hover); }
+            .text-primary { color: var(--primary); }
+            .border-primary { border-color: var(--primary); }
+            body { color: var(--text-main); }
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#5A7F67", 
+                        "primary-dark": "#4A6955",
+                        "background-light": "#F9FAFB",
+                        "background-dark": "#0F172A",
+                        "surface-light": "#FFFFFF",
+                        "surface-dark": "#1E293B",
+                        "text-light": "#111827",
+                        "text-dark": "#F3F4F6",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased transition-colors duration-200 flex flex-col min-h-screen">
+<nav class="w-full border-b border-gray-200 dark:border-gray-800 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16 items-center">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-primary text-3xl mr-2">psychology_alt</span>
+<span class="font-display font-bold text-xl tracking-tight text-gray-900 dark:text-white">Rule24</span>
+</div>
+<div class="flex items-center space-x-4">
+<a class="text-sm font-semibold text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-white transition" href="/">Вернуться на главную</a>
+</div>
+</div>
+</div>
+</nav>
+<main class="flex-grow flex items-center justify-center py-20 px-4">
+<div class="max-w-2xl w-full text-center">
+<div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-8">
+<span class="material-symbols-outlined text-primary text-5xl font-bold">check_circle</span>
+</div>
+<div class="mb-16">
+<h1 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-4 leading-tight">
+                Спасибо! Вы в списке раннего доступа.
+            </h1>
+<p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 font-medium max-w-lg mx-auto leading-relaxed">
+                Вы получите 1 месяц бесплатного доступа после запуска Rule24.
+            </p>
+</div>
+<div class="w-24 h-px bg-gray-200 dark:bg-gray-800 mx-auto mb-16"></div>
+<div class="bg-white dark:bg-surface-dark rounded-3xl p-8 md:p-12 border border-primary/20 shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-5">
+<span class="material-symbols-outlined text-9xl">redeem</span>
+</div>
+<div class="relative z-10">
+<h2 class="text-2xl md:text-3xl font-display font-bold text-gray-900 dark:text-white mb-4">
+                    Хотите 6 месяцев бесплатно?
+                </h2>
+<p class="text-gray-700 dark:text-gray-300 mb-8 font-medium max-w-md mx-auto">
+                    Помогите нам создать сервис под реальные задачи психологов. Пройдите короткое интервью (15 минут).
+                </p>
+<button class="w-full sm:w-auto bg-primary hover:bg-primary-dark text-white font-bold text-lg px-10 py-4 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 mb-4">
+                    Записаться на интервью
+                </button>
+<p class="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                    Количество мест ограничено.
+                </p>
+</div>
+</div>
+</div>
+</main>
+<footer class="py-12 bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+<div class="flex items-center mb-6 md:mb-0">
+<span class="material-symbols-outlined text-primary text-2xl mr-2 font-bold">psychology_alt</span>
+<span class="font-display font-bold text-lg text-gray-900 dark:text-white">Rule24</span>
+</div>
+<div class="text-sm font-semibold text-gray-600 dark:text-gray-400">
+            © 2024 Rule24. Все права защищены.
+        </div>
+<div class="flex space-x-6 mt-6 md:mt-0">
+<a class="text-sm font-semibold text-gray-500 hover:text-primary dark:hover:text-white transition" href="#">Политика конфиденциальности</a>
+<a class="text-sm font-semibold text-gray-500 hover:text-primary dark:hover:text-white transition" href="#">Условия использования</a>
+</div>
+</div>
+</footer>
+
+</body></html>

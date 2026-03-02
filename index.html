@@ -1,0 +1,436 @@
+<!DOCTYPE html><html lang="ru"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Rule24 - Автоматизация правила 24 часов для психологов</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+            :root {
+                --primary: #5A7F67;
+                --primary-hover: #4A6955;
+                --background-light: #F9FAFB;
+                --surface-light: #FFFFFF;
+                --text-main: #111827;
+                --text-muted: #1F2937;
+                --text-slate-trust: #0f172a;
+            }
+            @layer base {
+                .bg-primary { background-color: var(--primary); }
+                .hover\:bg-primary-hover:hover { background-color: var(--primary-hover); }
+                .text-primary { color: var(--primary); }
+                .border-primary { border-color: var(--primary); }
+                body { color: var(--text-main); }
+            }
+        </style>
+    <script>
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#5A7F67", 
+                            "primary-dark": "#4A6955",
+                            "background-light": "#F9FAFB",
+                            "background-dark": "#0F172A",
+                            "surface-light": "#FFFFFF",
+                            "surface-dark": "#1E293B",
+                            "text-light": "#111827",
+                            "text-dark": "#F9FAFB",
+                        },
+                        fontFamily: {
+                            display: ["Inter", "sans-serif"],
+                            body: ["Inter", "sans-serif"],
+                        },
+                        borderRadius: {
+                            DEFAULT: "0.5rem",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased transition-colors duration-200">
+    <nav class="w-full border-b border-gray-200 dark:border-gray-800 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+    <div class="flex items-center">
+    <span class="material-symbols-outlined text-primary text-3xl mr-2" style="">psychology_alt</span>
+    <span class="font-display font-bold text-xl tracking-tight text-gray-900 dark:text-white" style="">Rule24</span>
+    </div>
+    <div class="hidden md:flex items-center space-x-8">
+    <a class="text-sm font-bold text-gray-900 hover:text-primary dark:text-gray-100 dark:hover:text-white transition" href="#how-it-works" style="">Как это работает</a>
+    <a class="text-sm font-bold text-gray-900 hover:text-primary dark:text-gray-100 dark:hover:text-white transition" href="#who-is-it-for" style="">Кому подходит</a>
+    </div>
+    </div>
+    </div>
+    </nav>
+    <section class="relative pt-20 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+    <div class="inline-flex items-center px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-bold mb-8 uppercase tracking-wider" style="">
+                Для частной практики
+            </div>
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 dark:text-white mb-6 leading-tight max-w-4xl mx-auto" style="">
+                Хватит быть&nbsp;<span class="text-primary relative inline-block" style="">
+                    коллектором
+                    <svg class="absolute w-full h-3 -bottom-1 left-0 text-primary opacity-30" preserveAspectRatio="none" viewBox="0 0 100 10">
+    <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="3"></path>
+    </svg>
+    </span> для своих клиентов
+            </h1>
+    <p class="text-lg md:text-xl text-gray-900 dark:text-gray-100 mb-10 max-w-2xl mx-auto leading-relaxed font-semibold" style="">
+                Автоматизируйте правило 24 часов и предоплату. Получайте деньги за неявки без неловких разговоров и потерь.
+            </p>
+    <div class="flex flex-col items-center">
+    <form action="thanks.html" class="flex flex-col sm:flex-row items-center w-full max-w-3xl mx-auto gap-3 mb-3">
+    <div class="relative w-full">
+    <input class="w-full px-6 py-4 bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-600 rounded-xl text-gray-950 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition font-bold text-lg" placeholder="Ваш email" required="" type="email">
+    </div>
+    <button class="w-full sm:w-auto bg-primary hover:bg-primary-dark text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 whitespace-nowrap" type="submit" style="">
+                        Получить ранний доступ — 1 месяц бесплатно
+                    </button>
+    </form>
+    <p class="text-sm font-extrabold text-primary mb-8" style="">1 месяц бесплатного использования при запуске</p>
+    <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4">
+    <div class="flex items-center text-sm font-bold text-gray-950 dark:text-gray-100 px-3 py-1.5 bg-white/50 dark:bg-white/5 rounded-full border border-gray-400 dark:border-gray-600" style="">
+    <span class="material-symbols-outlined text-base mr-2 text-primary font-bold" style="">verified_user</span>
+                        Клиент контролирует оплату
+                    </div>
+    <div class="flex items-center text-sm font-bold text-gray-950 dark:text-gray-100 px-3 py-1.5 bg-white/50 dark:bg-white/5 rounded-full border border-gray-400 dark:border-gray-600" style="">
+    <span class="material-symbols-outlined text-base mr-2 text-primary font-bold" style="">lock_open</span>
+                        Без скрытых списаний
+                    </div>
+    <div class="flex items-center text-sm font-bold text-gray-950 dark:text-gray-100 px-3 py-1.5 bg-white/50 dark:bg-white/5 rounded-full border border-gray-400 dark:border-gray-600" style="">
+    <span class="material-symbols-outlined text-base mr-2 text-primary font-bold" style="">credit_card_off</span>
+                        Отвязка карты в любой момент
+                    </div>
+    </div>
+    </div>
+    </div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[600px] bg-gradient-to-tr from-primary/10 via-transparent to-transparent dark:from-primary/5 rounded-full blur-3xl -z-0 opacity-60 pointer-events-none"></div>
+    </section>
+    <section class="py-12 bg-gray-100 dark:bg-gray-900/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white dark:bg-surface-dark rounded-3xl p-8 border border-gray-300 dark:border-gray-800 shadow-sm">
+    <h2 class="text-2xl md:text-3xl font-display font-bold text-gray-900 dark:text-white mb-8 text-center" style="">Сервис, который окупает себя за одну сессию</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+    <div class="space-y-5">
+    <div class="flex items-start">
+    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-1">
+    <span class="material-symbols-outlined text-primary text-sm font-bold" style="">trending_down</span>
+    </div>
+    <p class="ml-4 text-gray-950 dark:text-gray-50 leading-relaxed font-bold" style="">В среднем частный психолог теряет до <span class="font-black text-gray-950 dark:text-white text-lg underline decoration-primary/30" style="">15 000 ₽</span> в месяц из-за отмен менее чем за 24 часа.</p>
+    </div>
+    <div class="flex items-start">
+    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-1">
+    <span class="material-symbols-outlined text-primary text-sm font-bold" style="">savings</span>
+    </div>
+    <p class="ml-4 text-gray-950 dark:text-gray-50 leading-relaxed font-bold" style="">Всего одна предотвращённая отмена окупает Rule24 на месяцы вперёд.</p>
+    </div>
+    </div>
+    <div class="space-y-5">
+    <div class="flex items-start">
+    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-1">
+    <span class="material-symbols-outlined text-primary text-sm font-bold" style="">alarm_off</span>
+    </div>
+    <p class="ml-4 text-gray-950 dark:text-gray-50 leading-relaxed font-bold" style="">Вы перестаёте терять деньги и время на «выбивание» оплат.</p>
+    </div>
+    <div class="flex items-start">
+    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-1">
+    <span class="material-symbols-outlined text-primary text-sm font-bold" style="">verified</span>
+    </div>
+    <p class="ml-4 text-gray-950 dark:text-gray-50 leading-relaxed font-bold" style="">Автоматическая фискализация чеков (НПД) — работайте полностью легально и спокойно.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section class="py-16 bg-white dark:bg-gray-950 border-y border-gray-100 dark:border-gray-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-background-light dark:bg-surface-dark rounded-3xl p-8 md:p-12 shadow-sm border border-gray-300 dark:border-gray-700">
+    <div class="text-center mb-10">
+    <h2 class="text-2xl md:text-3xl font-display font-bold text-gray-900 dark:text-white mb-2" style="">Сколько вы теряете из-за отмен?</h2>
+    <p class="text-gray-950 dark:text-gray-50 font-black" style="">Простая математика вашей упущенной выгоды</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="space-y-6">
+    <div>
+    <label class="block text-sm font-black text-gray-950 dark:text-gray-100 mb-2" for="session-cost" style="">Стоимость вашей сессии (₽)</label>
+    <div class="relative rounded-md shadow-sm">
+    <input class="focus:ring-primary focus:border-primary block w-full pl-4 pr-12 text-lg font-bold border-gray-400 rounded-xl py-3 dark:bg-gray-800 dark:border-gray-600 dark:text-white" id="session-cost" name="session-cost" placeholder="0" type="number" value="4000">
+    <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+    <span class="text-gray-950 dark:text-gray-100 font-black text-lg" style="">₽</span>
+    </div>
+    </div>
+    </div>
+    <div class="bg-gray-200 dark:bg-gray-800/80 rounded-xl p-4 border border-gray-300 dark:border-gray-700">
+    <div class="flex items-center justify-between text-sm text-gray-950 dark:text-gray-100 mb-2">
+    <span class="font-black" style="">Среднее кол-во отмен:</span>
+    <span class="font-black text-gray-950 dark:text-white" style="">3 в месяц</span>
+    </div>
+    <div class="flex items-center justify-between text-sm text-gray-950 dark:text-gray-100">
+    <span class="font-black" style="">Расчетный период:</span>
+    <span class="font-black text-gray-950 dark:text-white" style="">12 месяцев</span>
+    </div>
+    </div>
+    </div>
+    <div class="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-primary/20 shadow-lg text-center relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-red-700"></div>
+    <p class="text-sm text-gray-950 dark:text-gray-100 mb-1 font-black" style="">Вы теряете примерно</p>
+    <div class="text-4xl md:text-5xl font-black text-gray-950 dark:text-white mb-2 tracking-tight" style="">
+                            144 000 ₽
+                        </div>
+    <p class="text-sm text-gray-950 dark:text-gray-100 mb-6 font-black" style="">в год из-за отмен менее чем за 24 часа</p>
+    <div class="inline-flex items-center text-xs font-black text-primary bg-primary/10 px-3 py-1.5 rounded-full" style="">
+    <span class="material-symbols-outlined text-sm mr-1 font-bold" style="">check_circle</span>
+                            Rule24 предотвращает эти потери автоматически
+                        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section class="py-20 bg-gray-50 dark:bg-gray-900/30">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl font-display font-bold text-gray-900 dark:text-white mb-4" style="">Знакомо?</h2>
+    <p class="text-lg text-gray-950 dark:text-gray-50 mb-10 font-black" style="">Когда у вас последний раз отменяли сессию менее чем за 24 часа?</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+    <label class="relative flex items-center p-5 rounded-2xl border border-gray-400 dark:border-gray-700 bg-white dark:bg-surface-dark cursor-pointer hover:border-primary transition shadow-sm group" style="">
+    <input class="w-5 h-5 text-primary border-gray-400 focus:ring-primary dark:border-gray-600 dark:bg-gray-800" name="survey" type="radio" value="this-week">
+    <span class="ml-4 text-gray-950 dark:text-gray-50 font-black text-base group-hover:text-primary transition" style="">На этой неделе</span>
+    </label>
+    <label class="relative flex items-center p-5 rounded-2xl border border-gray-400 dark:border-gray-700 bg-white dark:bg-surface-dark cursor-pointer hover:border-primary transition shadow-sm group" style="">
+    <input class="w-5 h-5 text-primary border-gray-400 focus:ring-primary dark:border-gray-600 dark:bg-gray-800" name="survey" type="radio" value="this-month">
+    <span class="ml-4 text-gray-950 dark:text-gray-50 font-black text-base group-hover:text-primary transition" style="">В этом месяце</span>
+    </label>
+    <label class="relative flex items-center p-5 rounded-2xl border border-gray-400 dark:border-gray-700 bg-white dark:bg-surface-dark cursor-pointer hover:border-primary transition shadow-sm group" style="">
+    <input class="w-5 h-5 text-primary border-gray-400 focus:ring-primary dark:border-gray-600 dark:bg-gray-800" name="survey" type="radio" value="before">
+    <span class="ml-4 text-gray-950 dark:text-gray-50 font-black text-base group-hover:text-primary transition" style="">Было раньше</span>
+    </label>
+    <label class="relative flex items-center p-5 rounded-2xl border border-gray-400 dark:border-gray-700 bg-white dark:bg-surface-dark cursor-pointer hover:border-primary transition shadow-sm group" style="">
+    <input class="w-5 h-5 text-primary border-gray-400 focus:ring-primary dark:border-gray-600 dark:bg-gray-800" name="survey" type="radio" value="never">
+    <span class="ml-4 text-gray-950 dark:text-gray-50 font-black text-base group-hover:text-primary transition" style="">Не сталкивался</span>
+    </label>
+    </div>
+    </div>
+    </section>
+    <section class="py-20 bg-surface-light dark:bg-surface-dark border-y border-gray-200 dark:border-gray-800" id="how-it-works">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+    <h2 class="text-3xl font-display font-bold text-gray-900 dark:text-white mb-4" style="">Как это работает?</h2>
+    <p class="text-gray-950 dark:text-gray-50 font-black" style="">Простая система, которая берет на себя рутину с оплатами.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+    <div class="relative group p-8 bg-gray-50 dark:bg-background-dark rounded-2xl border border-gray-400 dark:border-gray-700 hover:border-primary/50 dark:hover:border-primary/50 transition duration-300">
+    <div class="absolute -top-6 left-8 w-12 h-12 bg-surface-light dark:bg-surface-dark border border-gray-400 dark:border-gray-700 rounded-xl flex items-center justify-center text-primary font-black text-xl shadow-sm z-10" style="">1</div>
+    <div class="mt-4">
+    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+    <span class="material-symbols-outlined font-black" style="">credit_card</span>
+    </div>
+    <h3 class="text-xl font-black text-gray-950 dark:text-white mb-3" style="">Привязка карты один раз</h3>
+    <p class="text-gray-950 dark:text-gray-50 leading-relaxed font-bold" style="">
+                            Психолог отправляет клиенту ссылку. Клиент один раз привязывает карту при записи на первую сессию. Все дальнейшие оплаты проходят автоматически.
+                        </p>
+    </div>
+    </div>
+    <div class="relative group p-8 bg-gray-50 dark:bg-background-dark rounded-2xl border border-gray-400 dark:border-gray-700 hover:border-primary/50 dark:hover:border-primary/50 transition duration-300">
+    <div class="absolute -top-6 left-8 w-12 h-12 bg-surface-light dark:bg-surface-dark border border-gray-400 dark:border-gray-700 rounded-xl flex items-center justify-center text-primary font-black text-xl shadow-sm z-10" style="">2</div>
+    <div class="mt-4">
+    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+    <span class="material-symbols-outlined font-black" style="">history_toggle_off</span>
+    </div>
+    <h3 class="text-xl font-black text-gray-950 dark:text-white mb-3" style="">Правило 24 часов</h3>
+    <p class="text-gray-950 dark:text-gray-50 leading-relaxed font-bold" style="">
+                            Если сессия не отменена заранее, система автоматически инициирует списание за 24 часа до встречи. Доход защищён без неловких разговоров.
+                        </p>
+    </div>
+    </div>
+    <div class="relative group p-8 bg-gray-50 dark:bg-background-dark rounded-2xl border border-gray-400 dark:border-gray-700 hover:border-primary/50 dark:hover:border-primary/50 transition duration-300">
+    <div class="absolute -top-6 left-8 w-12 h-12 bg-surface-light dark:bg-surface-dark border border-gray-400 dark:border-gray-700 rounded-xl flex items-center justify-center text-primary font-black text-xl shadow-sm z-10" style="">3</div>
+    <div class="mt-4">
+    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
+    <span class="material-symbols-outlined font-black" style="">receipt_long</span>
+    </div>
+    <h3 class="text-xl font-black text-gray-950 dark:text-white mb-3" style="">Автоматическое списание и чеки</h3>
+    <p class="text-gray-950 dark:text-gray-50 leading-relaxed font-bold" style="">
+                            Оплата списывается автоматически. Клиент получает подтверждение оплаты, формируются чеки НПД и соблюдаются требования законодательства РФ.
+                        </p>
+    </div>
+    </div>
+    </div>
+    <div class="text-center">
+    <div class="inline-flex items-center px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg border border-gray-400 dark:border-gray-700 text-sm font-black text-gray-950 dark:text-gray-100" style="">
+    <span class="material-symbols-outlined text-primary text-lg mr-2 font-black" style="">shield_with_heart</span>
+                    Клиент может отвязать карту или отключить автосписание после завершения терапии.
+                </div>
+    </div>
+    </div>
+    </section>
+    <section class="py-24 bg-background-light dark:bg-background-dark" id="who-is-it-for">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+    <h2 class="text-3xl font-display font-bold text-gray-900 dark:text-white mb-4" style="">Для кого мы создали Rule24</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+    <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-3xl shadow-sm border border-primary/20 relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+    <div class="flex items-center mb-6">
+    <div class="p-2 bg-primary/10 rounded-full mr-4">
+    <span class="material-symbols-outlined text-primary text-2xl font-black" style="">thumb_up</span>
+    </div>
+    <h3 class="text-xl font-black text-gray-950 dark:text-white" style="">Вам идеально подойдет, если:</h3>
+    </div>
+    <ul class="space-y-4">
+    <li class="flex items-start" style="">
+    <span class="material-symbols-outlined text-primary mr-3 text-lg mt-0.5 font-black" style="">check</span>
+    <span class="text-gray-950 dark:text-gray-50 font-black" style="">Вы частный психолог, психотерапевт или коуч</span>
+    </li>
+    <li class="flex items-start" style="">
+    <span class="material-symbols-outlined text-primary mr-3 text-lg mt-0.5 font-black" style="">check</span>
+    <span class="text-gray-950 dark:text-gray-50 font-black" style="">Устали напоминать клиентам об оплате</span>
+    </li>
+    <li class="flex items-start" style="">
+    <span class="material-symbols-outlined text-primary mr-3 text-lg mt-0.5 font-black" style="">check</span>
+    <span class="text-gray-950 dark:text-gray-50 font-black" style="">Теряете доход из-за внезапных отмен и неявок</span>
+    </li>
+    <li class="flex items-start" style="">
+    <span class="material-symbols-outlined text-primary mr-3 text-lg mt-0.5 font-black" style="">check</span>
+    <span class="text-gray-950 dark:text-gray-50 font-black" style="">Хотите установить четкие границы в терапии</span>
+    </li>
+    </ul>
+    </div>
+    <div class="bg-surface-light dark:bg-surface-dark p-8 rounded-3xl shadow-sm border border-gray-400 dark:border-gray-800 opacity-90 hover:opacity-100 transition">
+    <div class="flex items-center mb-6">
+    <div class="p-2 bg-gray-100 dark:bg-gray-800 rounded-full mr-4">
+    <span class="material-symbols-outlined text-gray-700 dark:text-gray-300 text-2xl font-black" style="">thumb_down</span>
+    </div>
+    <h3 class="text-xl font-black text-gray-950 dark:text-white" style="">Вам не подойдет, если:</h3>
+    </div>
+    <ul class="space-y-4">
+    <li class="flex items-start" style="">
+    <span class="material-symbols-outlined text-gray-600 mr-3 text-lg mt-0.5 font-black" style="">close</span>
+    <span class="text-gray-950 dark:text-gray-100 font-black" style="">У вас крупная клиника со штатом администраторов</span>
+    </li>
+    <li class="flex items-start" style="">
+    <span class="material-symbols-outlined text-gray-600 mr-3 text-lg mt-0.5 font-black" style="">close</span>
+    <span class="text-gray-950 dark:text-gray-100 font-black" style="">Вам нравится лично контролировать каждый перевод</span>
+    </li>
+    <li class="flex items-start" style="">
+    <span class="material-symbols-outlined text-gray-600 mr-3 text-lg mt-0.5 font-black" style="">close</span>
+    <span class="text-gray-950 dark:text-gray-100 font-black" style="">Вы работаете исключительно за наличный расчет</span>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section class="py-24 bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800" id="faq">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+    <h2 class="text-3xl font-display font-bold text-gray-900 dark:text-white mb-4" style="">Частые вопросы</h2>
+    <p class="text-lg text-gray-950 dark:text-gray-50 font-black" style="">Всё, что вы и ваши клиенты хотели знать о сервисе</p>
+    </div>
+    <div class="space-y-4">
+    <div class="bg-gray-100 dark:bg-surface-dark rounded-2xl border border-gray-400 dark:border-gray-800 overflow-hidden">
+    <div class="p-6">
+    <h3 class="text-lg font-black text-gray-950 dark:text-white mb-3 flex items-center" style="">
+    <span class="material-symbols-outlined text-primary mr-3 text-xl" style="">help</span>
+                            Клиент может отказаться от автосписаний?
+                        </h3>
+    <p class="text-gray-950 dark:text-gray-50 font-black leading-relaxed pl-8 border-l-2 border-primary/20" style="">
+                            Да. Клиент может в любой момент отвязать карту или отменить дальнейшие списания.
+                        </p>
+    </div>
+    </div>
+    <div class="bg-gray-100 dark:bg-surface-dark rounded-2xl border border-gray-400 dark:border-gray-800 overflow-hidden">
+    <div class="p-6">
+    <h3 class="text-lg font-black text-gray-950 dark:text-white mb-3 flex items-center" style="">
+    <span class="material-symbols-outlined text-primary mr-3 text-xl" style="">help</span>
+                            Оплата списывается автоматически всегда?
+                        </h3>
+    <p class="text-gray-950 dark:text-gray-50 font-black leading-relaxed pl-8 border-l-2 border-primary/20" style="">
+                            Нет. Списание происходит только если сессия не отменена за 24 часа.
+                        </p>
+    </div>
+    </div>
+    <div class="bg-gray-100 dark:bg-surface-dark rounded-2xl border border-gray-400 dark:border-gray-800 overflow-hidden">
+    <div class="p-6">
+    <h3 class="text-lg font-black text-gray-950 dark:text-white mb-3 flex items-center" style="">
+    <span class="material-symbols-outlined text-primary mr-3 text-xl" style="">help</span>
+                            Что происходит после завершения терапии?
+                        </h3>
+    <p class="text-gray-950 dark:text-gray-50 font-black leading-relaxed pl-8 border-l-2 border-primary/20" style="">
+                            Автосписания отключаются. Клиент может удалить карту или прекратить использование сервиса.
+                        </p>
+    </div>
+    </div>
+    <div class="bg-gray-100 dark:bg-surface-dark rounded-2xl border border-gray-400 dark:border-gray-800 overflow-hidden">
+    <div class="p-6">
+    <h3 class="text-lg font-black text-gray-950 dark:text-white mb-3 flex items-center" style="">
+    <span class="material-symbols-outlined text-primary mr-3 text-xl" style="">help</span>
+                            Это законно для самозанятых?
+                        </h3>
+    <p class="text-gray-950 dark:text-gray-50 font-black leading-relaxed pl-8 border-l-2 border-primary/20" style="">
+                            Да. Сервис помогает работать официально и принимать оплату в рамках законодательства РФ.
+                        </p>
+    </div>
+    </div>
+    <div class="bg-gray-100 dark:bg-surface-dark rounded-2xl border border-gray-400 dark:border-gray-800 overflow-hidden">
+    <div class="p-6">
+    <h3 class="text-lg font-black text-gray-950 dark:text-white mb-3 flex items-center" style="">
+    <span class="material-symbols-outlined text-primary mr-3 text-xl" style="">help</span>
+                            Нужно ли клиенту что-то устанавливать?
+                        </h3>
+    <p class="text-gray-950 dark:text-gray-50 font-black leading-relaxed pl-8 border-l-2 border-primary/20" style="">
+                            Нет. Всё работает через ссылку.
+                        </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section class="py-24 bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-800" id="final-cta">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="inline-block p-4 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent border border-primary/20 mb-8">
+    <span class="material-symbols-outlined text-primary text-4xl font-black" style="">rocket_launch</span>
+    </div>
+    <h2 class="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-6" style="">
+                Ранний доступ к Rule24
+            </h2>
+    <p class="text-lg text-gray-950 dark:text-gray-50 mb-10 max-w-2xl mx-auto font-black" style="">
+                Оставьте email и получите 1 месяц бесплатного использования после запуска сервиса.
+            </p>
+    <form action="thanks.html" class="flex flex-col sm:flex-row justify-center items-start gap-4 max-w-3xl mx-auto">
+    <div class="w-full">
+    <input class="w-full px-5 py-5 bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 rounded-xl text-gray-950 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition font-black text-lg" placeholder="Ваш email" required="" type="email">
+    </div>
+    <div class="flex flex-col items-center w-full sm:w-auto">
+    <button class="w-full sm:w-auto bg-primary hover:bg-primary-dark text-white font-black text-lg px-10 py-5 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 whitespace-nowrap" type="submit" style="">
+                        Получить ранний доступ — 1 месяц бесплатно
+                    </button>
+    <p class="mt-2 text-sm font-extrabold text-primary" style="">1 месяц бесплатного использования при запуске</p>
+    </div>
+    </form>
+    <p class="mt-6 text-sm font-black text-gray-700 dark:text-gray-300" style="">
+                Без обязательств. Отписаться можно в любой момент.
+            </p>
+    </div>
+    </section>
+    <footer class="py-12 bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+    <div class="flex items-center mb-6 md:mb-0">
+    <span class="material-symbols-outlined text-primary text-2xl mr-2 font-black" style="">psychology_alt</span>
+    <span class="font-display font-bold text-lg text-gray-900 dark:text-white" style="">Rule24</span>
+    </div>
+    <div class="text-sm font-black text-gray-900 dark:text-gray-100" style="">
+                © 2024 Rule24. Все права защищены.
+            </div>
+    <div class="flex space-x-6 mt-6 md:mt-0">
+    <a class="text-sm font-black text-gray-900 hover:text-primary dark:text-gray-100 dark:hover:text-white transition" href="#" style="">Политика конфиденциальности</a>
+    <a class="text-sm font-black text-gray-900 hover:text-primary dark:text-gray-100 dark:hover:text-white transition" href="#" style="">Условия использования</a>
+    </div>
+    </div>
+    </footer>
+    
+    </body></html>
