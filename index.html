@@ -49,6 +49,14 @@
                     opacity: 1 !important;
                 }
             }
+            [data-nav] {
+                transition: transform 0.3s ease, opacity 0.3s ease;
+            }
+            [data-nav].nav-hidden {
+                transform: translateY(-100%);
+                opacity: 0;
+                pointer-events: none;
+            }
         </style>
     <script>
             tailwind.config = {
@@ -78,7 +86,7 @@
         </script>
     </head>
     <body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased transition-colors duration-200">
-    <nav class="w-full border-b border-gray-200 dark:border-gray-800 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-md sticky top-0 z-50">
+    <nav class="w-full border-b border-gray-200 dark:border-gray-800 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-md sticky top-0 z-50" data-nav>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16 items-center">
     <div class="flex items-center">
@@ -92,7 +100,7 @@
     </div>
     </div>
     </nav>
-    <section class="relative pt-16 md:pt-20 lg:pt-24 xl:pt-28 pb-16 lg:pb-24 overflow-hidden">
+    <section class="relative pt-16 md:pt-20 lg:pt-24 xl:pt-28 pb-16 lg:pb-24 overflow-hidden" data-hero>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
     <div class="inline-flex items-center px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-bold mb-8 uppercase tracking-wider" style="">
                 Для частной практики
@@ -535,6 +543,22 @@
                 } else {
                     revealElements.forEach((el) => el.classList.add("is-visible"));
                 }
+            }
+
+            const nav = document.querySelector("[data-nav]");
+            const heroSection = document.querySelector("[data-hero]");
+            if (nav && heroSection) {
+                const updateNavVisibility = () => {
+                    const triggerPoint = Math.max(heroSection.offsetHeight - nav.offsetHeight, 0);
+                    if (window.scrollY > triggerPoint) {
+                        nav.classList.add("nav-hidden");
+                    } else {
+                        nav.classList.remove("nav-hidden");
+                    }
+                };
+                updateNavVisibility();
+                window.addEventListener("scroll", updateNavVisibility, { passive: true });
+                window.addEventListener("resize", updateNavVisibility);
             }
         });
     </script>
