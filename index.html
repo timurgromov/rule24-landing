@@ -3,8 +3,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Rule24 - Автоматизация правила 24 часов для психологов</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
     <style type="text/tailwindcss">
             :root {
                 --primary: #5A7F67;
@@ -17,7 +17,7 @@
             }
             @layer base {
                 .bg-primary { background-color: var(--primary); }
-                .hover\:bg-primary-hover:hover { background-color: var(--primary-hover); }
+                .hover\:bg-primary-hover\:hover { background-color: var(--primary-hover); }
                 .text-primary { color: var(--primary); }
                 .border-primary { border-color: var(--primary); }
                 body { color: var(--text-main); }
@@ -47,8 +47,9 @@
                         },
                     },
                 },
-            };
-        </script>
+            },
+        };
+    </script>
     </head>
     <body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased transition-colors duration-200">
     <nav class="w-full border-b border-gray-200 dark:border-gray-800 bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-md sticky top-0 z-50">
@@ -65,9 +66,9 @@
     </div>
     </div>
     </nav>
-    <section class="relative pt-20 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
+    <section class="relative pt-12 pb-10 lg:pt-20 lg:pb-16 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-    <div class="inline-flex items-center px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-bold mb-8 uppercase tracking-wider" style="">
+    <div class="inline-flex items-center px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-bold mb-6 uppercase tracking-wider" style="">
                 Для частной практики
             </div>
     <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 dark:text-white mb-6 leading-tight max-w-4xl mx-auto" style="">
@@ -151,7 +152,7 @@
     <div class="bg-background-light dark:bg-surface-dark rounded-3xl p-8 md:p-12 shadow-sm border border-gray-300 dark:border-gray-700">
     <div class="text-center mb-10">
     <h2 class="text-2xl md:text-3xl font-display font-bold text-gray-900 dark:text-white mb-2" style="">Сколько вы теряете из-за отмен?</h2>
-    <p class="text-gray-950 dark:text-gray-50 font-black" style="">Простая математика вашей упущенной выгоды</p>
+    <p class="text-lg text-gray-950 dark:text-gray-50 font-black" style="">Простая математика вашей упущенной выгоды</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     <div class="space-y-6">
