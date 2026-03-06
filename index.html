@@ -88,7 +88,7 @@
             };
         </script>
     <script>
-            const TG_BOT_URL = "https://t.me/Rule24Bot";
+            const TG_BOT_URL = "https://t.me/Rule24bot";
         </script>
     </head>
     <body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased transition-colors duration-200">
@@ -124,7 +124,7 @@
             </p>
     <div class="flex flex-col items-center w-full">
     <div class="w-full max-w-2xl mx-auto flex flex-col items-center gap-3 mb-8">
-    <a class="w-full sm:w-auto inline-flex justify-center bg-primary hover:bg-primary-dark text-white font-semibold text-base md:text-lg px-6 py-3 md:px-8 md:py-4 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 text-center" data-tg-cta="" rel="noopener noreferrer" target="_blank">
+    <a class="w-full sm:w-auto inline-flex justify-center bg-primary hover:bg-primary-dark text-white font-semibold text-base md:text-lg px-6 py-3 md:px-8 md:py-4 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 text-center" data-tg-cta="">
                         Получить ранний доступ
                     </a>
     <p class="text-sm text-gray-600 dark:text-gray-300 text-center font-semibold" style="">После перехода нажмите Start в Telegram-боте, чтобы попасть в список раннего доступа.</p>
@@ -443,7 +443,7 @@
                 Мы приглашаем первых специалистов в закрытый ранний доступ.
             </p>
     <div class="w-full max-w-xl mx-auto flex flex-col items-center gap-3">
-    <a class="w-full sm:w-auto inline-flex justify-center bg-primary hover:bg-primary-dark text-white font-semibold text-base md:text-lg px-6 py-3 md:px-8 md:py-4 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 text-center" data-tg-cta="" rel="noopener noreferrer" target="_blank">
+    <a class="w-full sm:w-auto inline-flex justify-center bg-primary hover:bg-primary-dark text-white font-semibold text-base md:text-lg px-6 py-3 md:px-8 md:py-4 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 text-center" data-tg-cta="">
                         Получить ранний доступ в Telegram
                     </a>
     <p class="text-sm font-semibold text-primary text-center" style="">После перехода нажмите Start в Telegram-боте, чтобы попасть в список раннего доступа.</p>
@@ -558,8 +558,16 @@
 
             const telegramCtas = document.querySelectorAll("[data-tg-cta]");
             if (telegramCtas.length && typeof TG_BOT_URL === "string") {
+                const isMobileDevice = /android|iphone|ipad|ipod/i.test(navigator.userAgent);
                 telegramCtas.forEach((cta) => {
                     cta.setAttribute("href", TG_BOT_URL);
+                    if (isMobileDevice) {
+                        cta.removeAttribute("target");
+                        cta.removeAttribute("rel");
+                    } else {
+                        cta.setAttribute("target", "_blank");
+                        cta.setAttribute("rel", "noopener noreferrer");
+                    }
                 });
             }
         });
